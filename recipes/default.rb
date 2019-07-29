@@ -27,6 +27,6 @@ end
 
 service "monit" do
   provider Chef::Provider::Service::Systemd
-  action [:enabled, :start]
+  action [:enable, :start]
   supports [:start, :restart, :stop]
 end
