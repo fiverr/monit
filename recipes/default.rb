@@ -26,6 +26,10 @@ template "/etc/monit/monitrc" do
 end
 
 service "monit" do
-  action [:enable, :start]
+  action [:start]
   supports [:start, :restart, :stop]
+end
+
+execute 'enabling monit at boot' do
+  command '/usr/sbin/update-rc.d -f monit enable'
 end
