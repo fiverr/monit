@@ -1,7 +1,7 @@
 source "http://rubygems.org"
 
-gem "chef", '>0.10'
+gem "chef", ">= 11.12.0"
 
 gem "foodcritic"
-gem "chefspec"
+gem "chefspec", ">= 3.0.2"
 gem "knife-spec"
